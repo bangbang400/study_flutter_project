@@ -2,8 +2,13 @@ import 'dart:math';
 
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  // デバッグするときに見た目を確認する時に使う
+  debugPaintSizeEnabled = false;
+  runApp(MyApp());
+}
 
 // StatelessWidgetはプロパティを変更できない
 // Statefulは動的に値が変更できる
